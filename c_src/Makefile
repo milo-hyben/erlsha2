@@ -50,12 +50,13 @@ PLUGSRC = $(C_SRC_DIR)/*.c
 SRCS = $(wildcard $(PLUGSRC))
 OBJ = $(SRCS:.c=.o)
 SOBJ = $(SRCS:.c=.so)
+CONFIG = config.h
 
-config:
+config.h:
 	echo "make config.h"
 	bash config.sh config.h "$(CC)" "$(CFLAGS)"
 
-all: $(OBJ) $(SOBJ)
+all: $(CONFIG) $(OBJ) $(SOBJ)
 	@echo "make finished"
 
 %.o: $(SRCS)

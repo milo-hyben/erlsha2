@@ -9,3 +9,4 @@ priv/*.so
 deps
 _build
 rebar.lock
+.rebar3

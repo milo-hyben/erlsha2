@@ -21,7 +21,7 @@ clean:
 	@$(REBAR) clean
 
 libs:
-	make -C c_src
+	make -C c_src all
 
 libs-clean:
 	make -C c_src clean
