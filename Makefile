@@ -19,3 +19,9 @@ test:
 
 clean:
 	@$(REBAR) clean
+
+libs:
+	make -C c_src
+
+libs-clean:
+	make -C c_src clean

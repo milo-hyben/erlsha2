@@ -7,3 +7,5 @@ c_src/*.d
 ebin
 priv/*.so
 deps
+_build
+rebar.lock

@@ -4,6 +4,11 @@ CONFIG_HDR=$1
 
 set -e
 
+
+CC=$2
+CFLAGS=$3
+echo "CC CFLAGS", $CC, $CFLAGS 
+
 tmpfile=`mktemp /tmp/erlsha2.XXXXXX`
 tmpcfile=${tmpfile}.c
 trap "rm -f $tmpfile $tmpcfile" EXIT
